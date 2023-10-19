@@ -20,7 +20,7 @@ jobs:
           <!doctype html>
           <html>
             <head>
-              <title>Vue Projects!</title>
+              <title>Vue Projects</title>
             </head>
             <body>
               <a href="./vue-vite-pokedex/"> vue vite pokedex</a>
