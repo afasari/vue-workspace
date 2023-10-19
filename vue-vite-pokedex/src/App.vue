@@ -45,6 +45,8 @@ export default {
 
 <template>
   <div class="container-fluid bg-dark bg-gradient">
+    <div class="row pt-5">
+    </div>
     <div class="container bg-dark" style="min-height: 100vh;">
       <div class="row justify-content-center">
         <div class="col-5">
@@ -67,30 +69,31 @@ export default {
         <div class="view-all text-white" v-if="!viewedAsDetail">
           <div class="row px-5">
             <div class="col-12 col-md-4 col-lg-3 mb-3" v-for="(pokemon,index) in pokemonList" :key="`poke-${index}`" @click="viewDetailPokemon(pokemon.name)">
-              <div class="cart">
-                <img :src="pokemon.sprites.front_default" alt="">
+              <div class="card text-center">
+                <img :src="pokemon.sprites.other.home.front_default" alt="">
                 <label style="font-size: 18px;" for="">
-                  {{pokemon.name}} {{pokemon.id}} 
+                  {{pokemon.name}}
                 </label>
               </div>
             </div>
           </div>
         </div>
         <div class="view-detail text-white" v-else>
+          <div class="mb-5">
           <button @click="viewedAsDetail=false">
             View All Pokemon
           </button>
+          </div>
 
           <div class="row">
             <div class="col-12 col-md-6">
-              <div class="cart">
-                <img :src="pokemonDetail.sprites.front_default" alt="">
+              <div class="card">
+                <img :src="pokemonDetail.sprites.other.home.front_default" alt="">
                 <label style="font-size: 18px;" for="">
                 </label>
               </div>
             </div>
             <div class="col-12 col-md-6">
-              <div class="cart">
                 <h2>
                 {{ pokemonDetail.name }}
                 </h2>
@@ -106,21 +109,26 @@ export default {
                   {{ i.move.name }} | 
                 </span>
                 </p>
-              </div>
             </div>
           </div>
         </div>
+        <div class="row pt-5">
+        </div>
       </div>
+    </div>
+    <div class="row pt-5">
     </div>
   </div>
 </template>
 
 <style scoped>
 .logo {
-  height: 6em;
+  width: 100%;
+  height: 150px;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+  text-align: center;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
