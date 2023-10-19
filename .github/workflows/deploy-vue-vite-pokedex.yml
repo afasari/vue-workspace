@@ -1,20 +1,26 @@
-name: GitHub Pages
+name: Deploy Vue Vite Pokedex
 
 on:
   push:
     branches:
       - main
   pull_request:
+    types: [opened, edited, closed]
+    branches: [main]
 
 jobs:
   deploy:
     runs-on: ubuntu-22.04
+    defaults:
+      run:
+        working-directory: ./vue-vite-pokedex
     permissions:
       contents: write
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - uses: actions/checkout@v3
+      - name: CHECK-OUT GIT REPOSITORY
+        uses: actions/checkout@v3
 
       - name: Setup Node
         uses: actions/setup-node@v3
