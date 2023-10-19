@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/vue-workspace/',
+  base: '/vue-workspace/vue-vite-pokedex',
   plugins: [vue()],
   server: {
     watch: {
