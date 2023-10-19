@@ -7,6 +7,7 @@ export default defineConfig({
   server: {
     watch: {
       usePolling: true
-    }
+    },
+    base: '/vue-workspace/vue-vite-pokedex/',
   }
 })
