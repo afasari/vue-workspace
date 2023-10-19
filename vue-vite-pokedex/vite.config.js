@@ -8,6 +8,6 @@ export default defineConfig({
     watch: {
       usePolling: true
     },
-    base: '/<REPO>/vue-vite-pokedex/',
+    base: '/vue-workspace/vue-vite-pokedex/',
   }
 })
