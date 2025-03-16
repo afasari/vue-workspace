@@ -1,0 +1,14 @@
+{
+  "name": "vue-workspace",
+  "version": "1.0.0",
+  "description": "## Vue workspace",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "afasari",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
