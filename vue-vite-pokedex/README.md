@@ -9,7 +9,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 ## How To Run
 
 ```bash
-yarn
-yarn dev
-yarn build
+npm install
+npm run dev
+npm run build
 ```
