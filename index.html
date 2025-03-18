@@ -56,6 +56,24 @@
             height: 30px;
             margin-bottom: 1rem;
         }
+        .project-description {
+            margin-top: 1rem;
+            color: #666;
+            font-size: 0.95rem;
+        }
+        .tech-stack {
+            margin-top: 1rem;
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .tech-badge {
+            background: #e9ecef;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            color: #42b883;
+        }
     </style>
 </head>
 <body>
@@ -69,7 +87,17 @@
                     <path d="M.91 9.569l25.067-.172 38.15 65.659L101.98 9.401l25.11.026-62.966 108.06z" fill="#41b883"></path>
                 </svg>
                 <a href="./vue-vite-pokedex/">Vue Vite Pokedex</a>
+                <p class="project-description">
+                    A modern Pokedex application that allows you to browse and explore detailed information about Pokemon. Features a responsive design with fast loading and efficient data handling.
+                </p>
+                <div class="tech-stack">
+                    <span class="tech-badge">Vue.js 3</span>
+                    <span class="tech-badge">Vite</span>
+                    <span class="tech-badge">PokeAPI</span>
+                    <span class="tech-badge">Bootstrap 5</span>
+                </div>
             </div>
+            <!-- Add more project cards here as you create them -->
         </div>
     </div>
 </body>
